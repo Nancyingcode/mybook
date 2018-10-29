@@ -1,4 +1,4 @@
-### 为什么使用`Typescript`
+# 为什么使用`Typescript`
 我们看一段代码
 ```javascript
 class Greeter {
@@ -45,7 +45,7 @@ let rst: A = {
 
 
 
-###Typescript获取类名
+# Typescript获取类名
 
 ```javascript
 class MyClass {}

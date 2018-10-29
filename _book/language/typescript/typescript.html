@@ -25,6 +25,10 @@
                 
             
                 
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
                 <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
                 
             
@@ -164,9 +168,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="3.1.1" data-path="../../framework/angular/angular.md">
+        <li class="chapter " data-level="3.1.1" data-path="../../framework/frontend/angular/angular.html">
             
-                <span>
+                <a href="../../framework/frontend/angular/angular.html">
             
                     
                     Angular
@@ -177,9 +181,9 @@
             
         </li>
     
-        <li class="chapter " data-level="3.1.2" data-path="../../framework/react/react.md">
+        <li class="chapter " data-level="3.1.2" data-path="../../framework/frontend/react/react.html">
             
-                <span>
+                <a href="../../framework/frontend/react/react.html">
             
                     
                     React
@@ -280,14 +284,7 @@
             
         </li>
     
-
-    
-        
-        <li class="header">SUMMARY</li>
-        
-        
-    
-        <li class="chapter " data-level="6.1" data-path="../../summary/code.html">
+        <li class="chapter " data-level="5.2" data-path="../../summary/code.html">
             
                 <a href="../../summary/code.html">
             
@@ -345,7 +342,7 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;typescript">&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;<code>Typescript</code></h3>
+                                <h3 id="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;typescript"><a name="&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;typescript" class="plugin-anchor" href="#&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;typescript"><i class="fa fa-link" aria-hidden="true"></i></a>&#x4E3A;&#x4EC0;&#x4E48;&#x4F7F;&#x7528;<code>Typescript</code></h3>
 <p>&#x6211;&#x4EEC;&#x770B;&#x4E00;&#x6BB5;&#x4EE3;&#x7801;</p>
 <pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Greeter</span> </span>{
     greeting: string;
@@ -385,7 +382,7 @@
 }
 </code></pre>
 <p>&#x8FD9;&#x91CC;&#x7ED9;rst&#x8D4B;&#x4E88;&#x7C7B;&#x578B;A,&#x5219; a,b&#x90FD;&#x5FC5;&#x987B;&#x4E3A;string;</p>
-<h3 id="typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;">Typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;</h3>
+<h3 id="typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;"><a name="typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;" class="plugin-anchor" href="#typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;"><i class="fa fa-link" aria-hidden="true"></i></a>Typescript&#x83B7;&#x53D6;&#x7C7B;&#x540D;</h3>
 <pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">MyClass</span> </span>{}
 
 <span class="hljs-keyword">const</span> instance = <span class="hljs-keyword">new</span> MyClass();
@@ -393,12 +390,12 @@
 <span class="hljs-built_in">console</span>.log(instance.constructor.name); <span class="hljs-comment">// MyClass</span>
 <span class="hljs-built_in">console</span>.log(MyClass.name);
 </code></pre>
-<h3 id="typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;">Typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;</h3>
+<h3 id="typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;"><a name="typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;" class="plugin-anchor" href="#typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;"><i class="fa fa-link" aria-hidden="true"></i></a>Typescript&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x6570;&#x7EC4;</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr : any[][] = []
 or
 <span class="hljs-keyword">let</span> arr : <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">Array</span>&lt;any&gt;&gt; = <span class="hljs-keyword">new</span> <span class="hljs-built_in">Array</span>&lt;<span class="hljs-built_in">Array</span>&lt;any&gt;&gt;()
 </code></pre>
-<h3 id="interface-vs-type">interface vs type</h3>
+<h3 id="interface-vs-type"><a name="interface-vs-type" class="plugin-anchor" href="#interface-vs-type"><i class="fa fa-link" aria-hidden="true"></i></a>interface vs type</h3>
 <p>&#x4F7F;&#x7528;<code>interface</code></p>
 <pre><code class="lang-javascript">interface Point {
     x: number;
@@ -475,7 +472,7 @@ interface b {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Typescript","level":"2.2","depth":1,"next":{"title":"Frontend","level":"3.1","depth":1,"path":"framework/frontend/frontend.md","ref":"framework/frontend/frontend.md","articles":[{"title":"Angular","level":"3.1.1","depth":2,"path":"framework/angular/angular.md","ref":"framework/angular/angular.md","articles":[]},{"title":"React","level":"3.1.2","depth":2,"path":"framework/react/react.md","ref":"framework/react/react.md","articles":[]}]},"previous":{"title":"Javascript","level":"2.1","depth":1,"path":"language/javascript/javascript.md","ref":"language/javascript/javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","alerts","simple-page-toc","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"simple-page-toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Nancying","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"language/typescript/typescript.md","mtime":"2018-09-26T06:41:30.197Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-09-28T07:13:58.971Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Typescript","level":"2.2","depth":1,"next":{"title":"Frontend","level":"3.1","depth":1,"path":"framework/frontend/frontend.md","ref":"framework/frontend/frontend.md","articles":[{"title":"Angular","level":"3.1.1","depth":2,"path":"framework/frontend/angular/angular.md","ref":"framework/frontend/angular/angular.md","articles":[]},{"title":"React","level":"3.1.2","depth":2,"path":"framework/frontend/react/react.md","ref":"framework/frontend/react/react.md","articles":[]}]},"previous":{"title":"Javascript","level":"2.1","depth":1,"path":"language/javascript/javascript.md","ref":"language/javascript/javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters-small","alerts","simple-page-toc","anchors","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"simple-page-toc":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"alerts":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"Nancying","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"gitbook":"*"},"file":{"path":"language/typescript/typescript.md","mtime":"2018-10-15T11:57:59.986Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-10-15T13:23:25.413Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>

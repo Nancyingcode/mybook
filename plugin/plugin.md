@@ -1,4 +1,4 @@
-### lodash
+# lodash
 对于`Typescript 2.0`以后的版本
 你想引用`loadsh`库
 
@@ -26,9 +26,31 @@ import _ from "lodash";
 ```javascript
 import * as _ from "lodash";
 ```
+
 取决于你使用的`Typescript`版本
 
-### rimraf
+
+# rimraf
 ```javascript
 rimraf node_modules
+```
+
+
+# socket.io
+想要实现下列效果
+```javascript
+let socket = io.connect("http://host");
+socket.on("*", function(){});
+```
+即，接受后台传来的所有消息
+，对于`socket.io 1.3.7`
+可以这样实现
+```javascript
+let onevent = socket.onevent;
+socket.onevent = function (packet) {
+    let args = packet.data || [];
+    onevent.call (this, packet);    
+    packet.data = ["*"].concat(args);
+    onevent.call(this, packet);    
+};
 ```
