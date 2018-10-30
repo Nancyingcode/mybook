@@ -3,12 +3,16 @@
 $ git config --global user.name "username"
 $ git config --global user.email "name@example.com"
 
+设置密码
 ssh-keygen -t rsa -C "name@example.com"
 
+把ssh目录下.pub后缀的内容添加到github
+
+建立仓库
 git init
 git add README.md
-git commit -m "first commit"
-git remote add origin git@github.com:Nancyingcode/java-template.git
+git commit -m "commit message"
+git remote add origin git@github.com:GithubName/project.git
 git push -u origin master
 ```
 # git取消最近一次commit`
