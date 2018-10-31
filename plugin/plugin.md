@@ -54,3 +54,9 @@ socket.onevent = function (packet) {
     onevent.call(this, packet);    
 };
 ```
+
+# sass
+安装失败时可尝试
+```javascript
+npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
+```
