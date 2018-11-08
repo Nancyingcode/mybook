@@ -29,8 +29,9 @@ $ git add ...
 $ git commit -c ORIG_HEAD 
 ```
 # git stash
-	`git`提交前如果要更新`pull`
-	先`git stash`将改变暂存
-	pull完成后再用`git stash pop`将内容合并
-	然后就可以`git push`
+
+>	`git`提交前如果要更新`pull`
+>	先`git stash`将改变暂存
+>	pull完成后再用`git stash pop`将内容合并
+>	然后就可以`git push`
 
