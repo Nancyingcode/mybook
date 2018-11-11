@@ -35,3 +35,37 @@ $ git commit -c ORIG_HEAD
 >	pull完成后再用`git stash pop`将内容合并
 >	然后就可以`git push`
 
+
+# git搭建个人服务器
+
+在linux系统下 添加一个用户 git(可取其他名)
+```javascript
+sudo adduser git
+```
+然后选择你要建立仓库的地区 示例为 /home/git/pro
+```javascirpt
+sudo git init --bare /home/git/pro/pro.git
+```
+设置 仓库的权限为刚刚添加的git用户
+```javascript
+sudo chown -R git:git /home/git/pro/pro.git
+```
+限制其他用户通过shell登录服务器
+```javascript
+sudo vim /etc/passwd
+```
+修改
+```javascript
+git:x:1000:1000:nancyingRes,10,13129585774,none:/home/git:/bin/bash
+```
+为
+```javascript
+git:x:1000:1000:nancyingRes,10,13129585774,none:/home/git:/usr/bin/git-shell
+```
+
+clone
+```javascript
+git clone git@server:/home/git/prop/pro.git
+```
+`push`同理
+
