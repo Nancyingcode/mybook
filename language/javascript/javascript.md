@@ -55,7 +55,7 @@ generator函数的意义在于同步的写异步代码
 
 generator函数我们也称之为遍历器
 - 使用方法
-```javascript
+ ```javascript
 var p = 1;
 function b(){
     console.log('p:' + p);
@@ -69,10 +69,11 @@ function* a(){
 
 a.next();// {value: 'p:2', done: false} 
 a.next();// {value: undefined done: true}
-```
+ ```
 我们都知道setTimout是异步的，如果不使用yield，那么会输出`p:1`
 通过next()方法来移动遍历器内的指针到下一个位置(带yield的语句)
 其结构可以看成是这样:
+
 HEAD
 yield 1
 yield 2
@@ -84,11 +85,12 @@ done true表示遍历器已全部运行完毕
 - 写法
   由于ES6并没有规定*号的位置
   以下四种写法都是可行的
+
   ```javascript
-    function * foo(x,y){}
-    function *foo(x,y){}
-    function* foo(x,y){}
-    function*foo(x,y){}
+  function * foo(x,y){}
+  function *foo(x,y){}
+  function* foo(x,y){}
+  function*foo(x,y){}
   ```
 
   为了遍历器执行起来更简单
@@ -104,19 +106,19 @@ done true表示遍历器已全部运行完毕
       }
       next();
   }
-
+  
   run(gen);
   ```
 
 
-  
+
   # async
 
   async 函数是 generator函数的语法糖
 
   ```javascript
   async function a(){}
-  ``` 
+  ```
   等同于
   ```javascript
   function a(){
