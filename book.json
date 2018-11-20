@@ -66,29 +66,29 @@
             "edit": true
         },
         "sharing": {
-           "douban": false,
-           "facebook": false,
-           "google": true,
-           "hatenaBookmark": false,
-           "instapaper": false,
-           "line": false,
-           "linkedin": true,
-           "messenger": false,
-           "pocket": false,
-           "qq": false,
-           "qzone": false,
-           "stumbleupon": false,
-           "twitter": false,
-           "viber": false,
-           "vk": false,
-           "weibo": true,
-           "whatsapp": false,
-           "all": [
-               "facebook", "google", "twitter",
-               "weibo", "instapaper", "linkedin",
-               "pocket", "stumbleupon", "qq", "qzone"
-           ]
-       },
+            "douban": false,
+            "facebook": false,
+            "google": true,
+            "hatenaBookmark": false,
+            "instapaper": false,
+            "line": false,
+            "linkedin": true,
+            "messenger": false,
+            "pocket": false,
+            "qq": false,
+            "qzone": false,
+            "stumbleupon": false,
+            "twitter": false,
+            "viber": false,
+            "vk": false,
+            "weibo": true,
+            "whatsapp": false,
+            "all": [
+                "facebook", "google", "twitter",
+                "weibo", "instapaper", "linkedin",
+                "pocket", "stumbleupon", "qq", "qzone"
+            ]
+        },
         "tbfed-pagefooter": {
             "copyright": "Copyright © nanc.fun 2018",
             "modify_label": "该文件修订时间：",

@@ -55,6 +55,7 @@ generator函数的意义在于同步的写异步代码
 
 generator函数我们也称之为遍历器
 - 使用方法
+ 
  ```javascript
 var p = 1;
 function b(){
@@ -66,27 +67,30 @@ function* a(){
     },100);
     b();
 }
+```
 
+```javascript
 a.next();// {value: 'p:2', done: false} 
 a.next();// {value: undefined done: true}
- ```
-我们都知道setTimout是异步的，如果不使用yield，那么会输出`p:1`
-通过next()方法来移动遍历器内的指针到下一个位置(带yield的语句)
-其结构可以看成是这样:
+```
 
-HEAD
-yield 1
-yield 2
-...
-END //log undefined
+>我们都知道setTimout是异步的，如果不使用yield，那么会输出`p:1`
+>通过next()方法来移动遍历器内的指针到下一个位置(带yield的语句)
+>其结构可以看成是这样:
 
-done true表示遍历器已全部运行完毕
+>>HEAD
+>>yield 1
+>>yield 2
+>>...
+>>END //log undefined
+
+>done true表示遍历器已全部运行完毕
 
 - 写法
   由于ES6并没有规定*号的位置
   以下四种写法都是可行的
 
-  ```javascript
+```javascript
   function * foo(x,y){}
   function *foo(x,y){}
   function* foo(x,y){}
@@ -96,7 +100,7 @@ done true表示遍历器已全部运行完毕
   为了遍历器执行起来更简单
   我们需要自定义一个执行器
 
-  ```javascript
+```javascript
   function run(fn){
       let gen = fn();
       function next(err,data){
@@ -162,15 +166,15 @@ done true表示遍历器已全部运行完毕
 
 # function  
 - 对比下列两个函数`functionOne`和`functionTwo`
+
 ```javascript
 functionOne();
 
 var functionOne = function() {
   console.log("Hello!");
 };                             
-```
 
-```javascript
+
 functionTwo();
 
 function functionTwo() {
