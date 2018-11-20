@@ -12,3 +12,12 @@
 
   对于带 Input() 注解的变量, 在 constructor无法获取到他，会返回 `null`
   通过`ngOnInit`获取它的值
+
+
+  # 打包优化
+
+- 减少打包体积
+
+  ```javascript
+  ng build --prod --aot --output-path=prod --base-href ./
+  ```
