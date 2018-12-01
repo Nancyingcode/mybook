@@ -192,4 +192,96 @@ function functionTwo() {
 	```
 	`functionThree`的定义与test无关
 
+# 代码风格
 
+- 要获取返回数组的元素
+
+```javascript
+const arr = [1, 2, 3, 4];
+
+// bad
+const first = arr[0];
+const second = arr[1];
+
+// good
+const [first, second] = arr;
+```
+
+- 如果你只需要传入只读的对象，不对他进行操作, 可以这样
+
+```javascript
+// bad
+function getFullName(user) {
+  const firstName = user.firstName;
+  const lastName = user.lastName;
+
+  return `${firstName} ${lastName}`;
+}
+
+// good
+function getFullName(user) {
+  const { firstName, lastName } = user;
+  return `${firstName} ${lastName}`;
+}
+
+// best
+function getFullName({ firstName, lastName }) {
+  return `${firstName} ${lastName}`;
+}
+```
+
+- 用对象展开代替`Object.assign`
+
+```javascript
+// very bad
+const original = { a: 1, b: 2 };
+const copy = Object.assign(original, { c: 3 }); // this mutates `original` ಠ_ಠ
+
+// bad
+const original = { a: 1, b: 2 };
+const copy = Object.assign({}, original, { c: 3 }); // copy => { a: 1, b: 2, c: 3 }
+
+// good
+const original = { a: 1, b: 2 };
+const copy = { ...original, c: 3 }; // copy => { a: 1, b: 2, c: 3 }
+
+const { a, ...noA } = copy; // noA => { b: 2, c: 3 }
+```
+# 注释风格
+- 注释和前一行要留空，如果是第一行可以不空行
+
+```javascript
+// bad
+const active = true;  // is current tab
+
+// good
+// is current tab
+const active = true;
+
+// bad
+function getType() {
+  console.log('fetching type...');
+  // set the default type to 'no type'
+  const type = this.type || 'no type';
+
+  return type;
+}
+
+// good
+function getType() {
+  console.log('fetching type...');
+
+  // set the default type to 'no type'
+  const type = this.type || 'no type';
+
+  return type;
+}
+
+// also good
+function getType() {
+  // set the default type to 'no type'
+  const type = this.type || 'no type';
+
+  return type;
+}
+```

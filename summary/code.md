@@ -6,9 +6,12 @@ if(a === 2) do
 ```
 这样写
 ```javascript
-const arr = [...props]
+const arr = {
+  1: '',
+  2: ''
+}
 for(const i in arr){
-    if(a === arr[i]) do
+    if(a === arr[i]) {}
 }
 ```
 
