@@ -1,3 +1,6 @@
+# 参考规范
+  airbnb [https://github.com/airbnb/javascript](https://github.com/airbnb/javascript)
+
 # 闭包
 ```javascript
 function buildList(list) {
@@ -18,11 +21,11 @@ function testList() {
 ```
 输出
 
-```javascript
-item2 undefined 3
-item2 undefined 3
-item2 undefined 3
-```
+
+    item2 undefined 3
+    item2 undefined 3
+    item2 undefined 3
+
 因为数组并没有下标为3的项,所以undefined
 那么为什么是item2 和 3 呢
 首先var i 作用域为在buildList函数内(根据作用域提升)
@@ -39,11 +42,11 @@ for (let i = 0; i < list.length; i++) {
 ```
 将var换成let，因为let是块级作用域，每次for循环中let是独立的，
 输出
-```javascript
-item0 1 0
-item1 2 1
-item2 3 2
-```
+
+    item0 1 0
+    item1 2 1
+    item2 3 2
+
 
 item同理
 
@@ -186,6 +189,8 @@ function functionTwo() {
 - `functionTwo`在包含它的script脚本或函数执行时候时定义
 	意味着你不能这样
 	```javascript
+  let test = true;
+  function doSomething(): void {}
 		if (test) {
    		function functionThree() { doSomething(); }
 	}
@@ -285,3 +290,7 @@ function getType() {
   return type;
 }
 ```
+
+# Web Compoent
+
+1. 对Web Compoent的介绍 [http://javascript.ruanyifeng.com/htmlapi/webcomponents.html#toc7](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html#toc7)
