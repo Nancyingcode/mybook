@@ -60,3 +60,27 @@ socket.onevent = function (packet) {
 ```javascript
 npm i node-sass --sass_binary_site=https://npm.taobao.org/mirrors/node-sass/
 ```
+
+# ssh无法登录
+
+输入　无响应
+```terminal
+  ssh root@<ip>
+```
+
+更新服务端的ssh key
+```terminal
+sudo rm -r /etc/ssh/ssh*key
+sudo dpkg-reconfigure openssh-server
+```
+
+更换新的本地key
+```terminal
+ssh-keygen -R +输入服务器的IP
+```
+
+# 更新node版本
+```terminal
+npm i -g n
+n stable
+```
