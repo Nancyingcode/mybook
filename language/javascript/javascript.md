@@ -294,3 +294,59 @@ function getType() {
 # Web Compoent
 
 1. 对Web Compoent的介绍 [http://javascript.ruanyifeng.com/htmlapi/webcomponents.html#toc7](http://javascript.ruanyifeng.com/htmlapi/webcomponents.html#toc7)
+
+# 数组操作
+
+# 值类型和引用类型
+
+# 原型链
+
+# 事件捕获和冒泡(capturing and bubble)
+
+当IE < 9 时
+浏览器只支持事件冒泡
+
+当IE >= 9 
+浏览器先进行捕获后进行冒泡
+
+一个简单的示例
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function capturing() {
+            console.log('capturing');
+        }
+
+        function bubble() {
+            console.log('bubble');
+        }
+    </script>
+    <style>
+        .a {
+            height: 100px;
+            width: 100px;
+            background: #000;
+        }
+
+        .b {
+            margin: auto;
+            height: 50px;
+            width: 50px;
+            line-height: 100px;
+            background: #fff;
+        }
+    </style>
+    <div id="a" class="a" onclick="capturing()">
+        <div id="b" class="b" onclick="bubble()"></div>
+    </div>
+</body>
+</html>
+```

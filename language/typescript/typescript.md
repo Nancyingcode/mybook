@@ -92,7 +92,7 @@ interface a {
     a:string
 }
 
-interface b {
+interface a {
     b:string
 }
 ```
@@ -104,3 +104,15 @@ interface c {
 }
 ```
 声明两个同名`type`会报错
+
+拓展接口
+```javascript
+interface A { x: number; }
+interface B extends A { y: number; }
+```
+
+拓展类型别名
+```javascript
+interface A { x: number; }
+type B = A & { y: number; };
+```
