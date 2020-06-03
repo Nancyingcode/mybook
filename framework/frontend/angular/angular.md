@@ -19,12 +19,14 @@
   减少打包体积
 
   ```shell
-  ng build --prod --aot --output-path=prod --base-href ./
+  ng build --prod --aot --source-map=false --build-optimizer=false --output-path=prod --base-href ./
   ```
+
+`source-map=false`会影响调试
 
   # 组件交互
   官方文档 [https://angular.cn/guide/component-interaction](https://angular.cn/guide/component-interaction)
-  
+
   # 服务端渲染注意事项
 
   1. 对于引用，避免 通过`src/app`来引入，再打服务包时会出错
@@ -36,7 +38,7 @@
   1. `document` `navigator` 等
 
   通过自己注入模块实现,例如 `domino` npm包
-  
+
   server.ts代码示例
   ```javascript
   // These are important and needed before anything else
