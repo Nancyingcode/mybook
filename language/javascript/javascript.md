@@ -299,6 +299,9 @@ function getType() {
 
 # 值类型和引用类型
 
+值类型 `string` `number`
+引用类型 `object` `array`
+
 # 原型链
 
 # 事件捕获和冒泡(capturing and bubble)
@@ -307,7 +310,10 @@ function getType() {
 浏览器只支持事件冒泡
 
 当IE >= 9 
-浏览器先进行捕获后进行冒泡
+浏览器支持事件捕获`capture`
+```javascript
+document.addEventListener('click', function() {}, true)
+```
 
 一个简单的示例
 ```html
