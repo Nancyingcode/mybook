@@ -69,3 +69,4 @@ git clone git@server:/home/git/prop/pro.git
 ```
 `push`同理
 
+# git pull
