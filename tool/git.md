@@ -70,3 +70,5 @@ git clone git@server:/home/git/prop/pro.git
 `push`同理
 
 # git pull
+
+`git pull` do `git fetch` then `git merge`
